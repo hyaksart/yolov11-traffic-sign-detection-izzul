@@ -17,9 +17,20 @@ Sistem ini butuh file khusus agar bisa pintar mengenali rambu (bernama `v3.pt`).
 * Silakan download filenya di sini: `https://drive.google.com/drive/folders/1b0SCrw-XLCO7AxQwFAzWQ3ekMXB8_NQZ?usp=sharing`
 * Setelah didownload, taruh file tersebut dicampur ke dalam folder kodingan ini.
 
-**Langkah 2: Install Bahan-bahan di Laptop**
-Pastikan laptop Anda sudah terpasang aplikasi Python. Buka CMD (Command Prompt) di laptop Anda, lalu ketik tulisan di bawah ini dan tekan Enter:
-`pip install ultralytics opencv-python`
+**Langkah 2: Install Aplikasi Dasar dan Bahan Tambahan**
+Sistem ini dibuat menggunakan bahasa pemrograman Python. Ikuti urutan ini agar kodingan bisa berjalan lancar:
+
+1. **Install Python 3.11:** Download dan install **Python versi 3.11** dari situs resminya (python.org). 
+   *(Sangat Penting: Saat awal proses instalasi muncul, JANGAN LUPA centang kotak kecil bertuliskan "Add Python to PATH" sebelum menekan tombol Install).*
+
+2. **Buka di Visual Studio Code (VS Code):**
+   Sangat disarankan untuk membuka folder kodingan ini menggunakan aplikasi Visual Studio Code agar lebih mudah.
+
+3. **Install Bahan-bahan (Library):**
+   Setelah folder terbuka di VS Code, klik menu `Terminal` di bagian atas layar, lalu pilih `New Terminal`. Di kotak terminal yang muncul di bawah, ketik perintah berikut satu per satu dan tekan Enter di setiap barisnya:
+   ```bash
+   pip install ultralytics
+   pip install opencv-python
 
 ---
 
