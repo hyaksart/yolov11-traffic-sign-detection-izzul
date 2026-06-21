@@ -14,34 +14,36 @@ Jika Anda ingin mencoba menjalankan kodingan ini di laptop Anda, ikuti 2 langkah
 
 **Langkah 1: Download File "Otak" Kecerdasan Buatan**
 Sistem ini butuh file khusus agar bisa pintar mengenali rambu (bernama `v3.pt`). Karena filenya besar, saya menyimpannya terpisah.
-* Silakan download filenya di sini: `https://drive.google.com/drive/folders/1wCp0ctpYq4hFTbAdTC-YxQTaL-hx5Bn8?usp=sharing`
+* Silakan download filenya di sini: `https://drive.google.com/drive/folders/1wCp0ctpYq4hFTbAdTC-YxQTaL-hx5Bn8?usp=sharing` (di drive juga tertera wiring didalam buku panduan)
 * Setelah didownload, taruh file tersebut dicampur ke dalam folder kodingan ini.
 
-**Langkah 2: Install Aplikasi Dasar dan Bahan Tambahan**
-Sistem ini dibuat menggunakan bahasa pemrograman Python. Ikuti urutan ini agar kodingan bisa berjalan lancar:
-
-1. **Install Python 3.11:** Download dan install **Python versi 3.11** dari situs resminya (python.org). 
-   *(Sangat Penting: Saat awal proses instalasi muncul, JANGAN LUPA centang kotak kecil bertuliskan "Add Python to PATH" sebelum menekan tombol Install).*
-
-2. **Buka di Visual Studio Code (VS Code):**
-   Sangat disarankan untuk membuka folder kodingan ini menggunakan aplikasi Visual Studio Code agar lebih mudah.
-
-3. **Install Bahan-bahan (Library):**
-   Setelah folder terbuka di VS Code, klik menu `Terminal` di bagian atas layar, lalu pilih `New Terminal`. Di kotak terminal yang muncul di bawah, ketik perintah berikut satu per satu dan tekan Enter di setiap barisnya:
-   ```bash
-   pip install ultralytics
-   pip install opencv-python
+**Langkah 2: Install Bahan-bahan di Laptop**
+Pastikan laptop Anda sudah terpasang aplikasi Python. Buka CMD (Command Prompt) di laptop Anda, lalu ketik tulisan di bawah ini dan tekan Enter:
+`pip install ultralytics opencv-python`
 
 ---
 
-## 🚀 Cara Menjalankan Kamera & Deteksi
+---
 
-Jika semua persiapan di atas sudah selesai, saatnya mencoba!
-1. Buka CMD, dan arahkan ke folder tempat kodingan ini berada.
-2. Ketik tulisan ini dan tekan Enter:
-`python demobismillah.py`
-3. Kamera laptop Anda akan menyala, dan cobalah hadapkan gambar rambu lalu lintas ke kamera.
+## 🚀 Cara Menjalankan Kamera & Menghubungkan ke Mobil (ESP32)
 
+Sistem ini tidak hanya mendeteksi rambu, tetapi juga mengirimkan hasil deteksinya ke mikrokontroler (ESP32) pada prototipe mobil miniatur. Oleh karena itu, laptop dan mobil harus terhubung ke jaringan WiFi yang sama sebelum program dijalankan.
+
+**Tahap 1: Aktifkan Hotspot Laptop**
+1. Buka pengaturan jaringan atau **Mobile Hotspot** di laptop Anda.
+2. Edit pengaturan hotspot dengan detail berikut:
+   * Nama WiFi (Network name / SSID): `h1`
+   * Kata Sandi (Password): `12345678`
+3. Nyalakan Mobile Hotspot di laptop Anda.
+4. Nyalakan prototipe mobil miniatur (ESP32). Tunggu beberapa saat agar mobil otomatis tersambung ke hotspot laptop Anda.
+
+**Tahap 2: Jalankan Program Deteksi**
+1. Pastikan Anda masih membuka folder kodingan ini di dalam **Visual Studio Code (VS Code)**.
+2. Pastikan file "otak" kecerdasan buatan (seperti `best.pt`) sudah berada di folder yang sama.
+3. Buka tab `Terminal` di bagian bawah layar VS Code.
+4. Ketik perintah berikut lalu tekan Enter:
+   ```bash
+   python demobismillah.py
 ---
 
 ## 📂 Fungsi File Lainnya (Untuk Kebutuhan Tingkat Lanjut)
