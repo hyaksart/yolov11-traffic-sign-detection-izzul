@@ -14,7 +14,7 @@ Jika Anda ingin mencoba menjalankan kodingan ini di laptop Anda, ikuti 2 langkah
 
 **Langkah 1: Download File "Otak" Kecerdasan Buatan**
 Sistem ini butuh file khusus agar bisa pintar mengenali rambu (bernama `v3.pt`). Karena filenya besar, saya menyimpannya terpisah.
-* Silakan download filenya di sini: `https://drive.google.com/drive/folders/1b0SCrw-XLCO7AxQwFAzWQ3ekMXB8_NQZ?usp=sharing`
+* Silakan download filenya di sini: `https://drive.google.com/drive/folders/1wCp0ctpYq4hFTbAdTC-YxQTaL-hx5Bn8?usp=sharing`
 * Setelah didownload, taruh file tersebut dicampur ke dalam folder kodingan ini.
 
 **Langkah 2: Install Aplikasi Dasar dan Bahan Tambahan**
