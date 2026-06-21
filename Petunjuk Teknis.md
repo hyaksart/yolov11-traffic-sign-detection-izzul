@@ -39,7 +39,7 @@ Sistem ini tidak hanya mendeteksi rambu, tetapi juga mengirimkan hasil deteksiny
 
 **Tahap 2: Jalankan Program Deteksi**
 1. Pastikan Anda masih membuka folder kodingan ini di dalam **Visual Studio Code (VS Code)**.
-2. Pastikan file "otak" kecerdasan buatan (seperti `best.pt`) sudah berada di folder yang sama.
+2. Pastikan file "otak" kecerdasan buatan (seperti `v3.pt`) sudah berada di folder yang sama.
 3. Buka tab `Terminal` di bagian bawah layar VS Code.
 4. Ketik perintah berikut lalu tekan Enter:
    ```bash
